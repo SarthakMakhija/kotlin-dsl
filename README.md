@@ -13,9 +13,11 @@ json {
   
 will render as  
 
+```
 {  
  "description" : "sample"  
  "active" : true  
  "email" : null  
  "age" : 12  
 }  
+```
