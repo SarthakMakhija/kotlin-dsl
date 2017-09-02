@@ -5,10 +5,10 @@
 ```
 json {  
     obj {  
-    "description" to "sample"  
-    "active"      to true  
-    "email"       to null  
-    "age"         to 12  
+      "description" to "sample"  
+      "active"      to true  
+      "email"       to null  
+      "age"         to 12  
     }  
 }  
 ```
