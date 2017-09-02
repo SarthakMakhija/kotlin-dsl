@@ -4,13 +4,13 @@ Exploring Kotlin DSL
 
 json {    
          obj {  
-            "description" to "sample"  
-            "active"      to true                
-            "age"         to 12  
-            "email"       to null  
+         "description" to "sample"  
+         "active"      to true                
+         "age"         to 12  
+         "email"       to null  
       }  
   }  
-  
+
 will render as  
 
 ```
