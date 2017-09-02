@@ -3,15 +3,15 @@ Exploring Kotlin DSL
 *Create a DSL to express JSON in Kotlin and output the result to actual JSON*
 
 json {    
-        obj {  
+         obj {  
             "description" to "sample"  
-            "active"      to true  
-            "email"       to null  
+            "active"      to true                
             "age"         to 12  
+            "email"       to null  
       }  
   }  
   
-should render as  
+will render as  
 
 {  
  "description" : "sample"  
