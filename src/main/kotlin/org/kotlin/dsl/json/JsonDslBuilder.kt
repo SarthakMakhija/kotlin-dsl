@@ -25,12 +25,17 @@ class Obj {
         keyValue.put(this, value)
     }
 
-    fun renderKeyValue(): String {
+    fun renderKeyValue(indent: String = " "): String {
         val sb = StringBuilder()
 
         for ( (k, v) in keyValue ){
             with(sb) {
-                append("$k : $v")
+                append("$indent$k : ")
+                when(v){
+                    is String    -> append("\"$v\"")
+                    is Array<*>  -> append("[${v.joinToString()}]")
+                    else         -> append("$v")
+                }
                 append("\n")
             }
         }

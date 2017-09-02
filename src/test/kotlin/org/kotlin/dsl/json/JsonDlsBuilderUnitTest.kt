@@ -60,6 +60,27 @@ class JsonDlsBuilderUnitTest : FunSpec() {
                         }
             json.getValue("email") shouldBe null
         }
+
+        test("should return String representation of JSON"){
+            val expectedJson = """
+                                    {
+                                     description : "sample"
+                                     active : true
+                                     countries : [India, US, UK]
+                                     email : null
+                                    }
+                                """
+            val json = json {
+                            obj {
+                                "description" to "sample"
+                                "active"      to true
+                                "countries"   to arrayOf("India", "US", "UK")
+                                "email"       to null
+                            }
+                        }
+
+            json.render() shouldBe expectedJson.trimIndent()
+        }
     }
 
 }
