@@ -8,7 +8,7 @@ json {
         "active"      to true  
         "email"       to null  
         "age"         to 12  
-    }
+    }  
 }
 will render as  
 
