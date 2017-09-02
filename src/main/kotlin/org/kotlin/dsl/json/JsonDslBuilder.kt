@@ -30,9 +30,9 @@ class Obj {
 
         for ( (k, v) in keyValue ){
             with(sb) {
-                append("$indent$k : ")
+                append("""$indent"$k" : """)
                 when(v){
-                    is String    -> append("\"$v\"")
+                    is String    -> append(""""$v"""")
                     is Array<*>  -> append("[${v.joinToString()}]")
                     else         -> append("$v")
                 }

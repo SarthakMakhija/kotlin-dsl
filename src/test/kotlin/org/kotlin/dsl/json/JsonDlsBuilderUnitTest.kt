@@ -64,10 +64,11 @@ class JsonDlsBuilderUnitTest : FunSpec() {
         test("should return String representation of JSON"){
             val expectedJson = """
                                     {
-                                     description : "sample"
-                                     active : true
-                                     countries : [India, US, UK]
-                                     email : null
+                                     "description" : "sample"
+                                     "active" : true
+                                     "countries" : [India, US, UK]
+                                     "email" : null
+                                     "age" : 12
                                     }
                                 """
             val json = json {
@@ -76,6 +77,7 @@ class JsonDlsBuilderUnitTest : FunSpec() {
                                 "active"      to true
                                 "countries"   to arrayOf("India", "US", "UK")
                                 "email"       to null
+                                "age"         to 12
                             }
                         }
 
