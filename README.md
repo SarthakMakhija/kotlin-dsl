@@ -7,7 +7,6 @@ json {
     root {
       "description" to "sample"  
       "active"      to true  
-      "email"       to null  
       "age"         to 12  
     }  
 }  
@@ -18,7 +17,6 @@ will render as
 {  
  "description" : "sample"  
  "active" : true  
- "email" : null  
  "age" : 12  
 }  
 ```
