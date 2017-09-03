@@ -1,6 +1,6 @@
 ## Exploring Kotlin DSL
 
-*Create a DSL to express JSON in Kotlin and output the result to actual JSON*
+*Basic DSL to express JSON in Kotlin and output the result to actual JSON*
 
 ```
 json {  
