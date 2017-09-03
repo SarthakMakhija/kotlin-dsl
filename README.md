@@ -4,7 +4,7 @@
 
 ```
 json {  
-    obj {  
+    root {
       "description" to "sample"  
       "active"      to true  
       "email"       to null  
