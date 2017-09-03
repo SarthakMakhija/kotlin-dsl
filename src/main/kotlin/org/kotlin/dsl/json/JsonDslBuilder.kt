@@ -5,9 +5,9 @@ class Json {
     private lateinit var jsonObject: Obj
 
     infix fun obj(init: Obj.() -> Unit): Obj {
-        val obj = Obj()
-        obj.init()
+        val obj    = Obj()
         jsonObject = obj
+        obj.init()
 
         return obj
     }

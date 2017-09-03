@@ -10,6 +10,8 @@
 
     <name>org.kotlin.dsl kotlin-dsl</name>
 
+    <description>Exploring Kotlin DSL: Creating a DSL to express JSON in Kotlin and output the result to actual JSON</description>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <kotlin.version>1.1.4</kotlin.version>
